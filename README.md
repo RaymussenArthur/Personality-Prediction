@@ -17,13 +17,6 @@ The main notebook (located in the `/Notebooks` folder) covers the following step
 * **Hyperparameter Tuning:** Optimizing the model's parameters for the best accuracy.
 * **Submission:** Generating the final `submission.csv` file.
 
-## Repository Structure
-├── Data/ # Contains raw and processed data (train.csv, test.csv) 
-├── Notebooks/ # Jupyter notebooks for analysis and modeling 
-├── Results/ # Submission files, saved models, or plots 
-├── .gitignore 
-└── README.md
-
 ## How to Run
 
 1.  **Clone the repository:**
