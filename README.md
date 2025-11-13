@@ -47,6 +47,30 @@ Instead of treating this as a complex 16-class classification problem, this solu
 4.  The final `Personality` string is created by concatenating the four predicted letters.
 5.  The results are formatted into `submission.csv` with `id` and `Personality` columns.
 
+## 📈 Hyperparameter Tuning & Results
+
+The models were tuned (likely using Bayesian optimization or a similar method, as seen in `Modeling2.ipynb`) to find the optimal set of parameters.
+
+### Best Parameters Found
+
+```json
+{
+    "n_estimators": 299,
+    "max_depth": 5,
+    "learning_rate": 0.15841262137302178,
+    "subsample": 0.8519152889164038,
+    "colsample_bytree": 0.6808885474211932,
+    "gamma": 2.0070959113867732,
+    "reg_alpha": 1.2522715414146957,
+    "reg_lambda": 2.5895571241033593
+}
+```
+
+### Performance Metrics
+- Best CV Score: 0.9639316464361883
+- Tuned Model R2 (Train): 0.9640534903692799
+- Tuned Model RMSE: 0.30210824789781193
+
 ---
 
 ## 💻 How to Run
